@@ -1,5 +1,6 @@
 
 import BinarySearch.BinarySearch;
+import BubbleSort.BubbleSort;
 import LinkedList.Lista.ListaLigada;
 
 public class Program {
@@ -26,5 +27,15 @@ public class Program {
         int[] vetor = new int[]{1, 2, 3, 4, 5};
         int result = Binary.Search(vetor, target);
         System.out.println("result: " + result);
+
+        // ###########################################################
+        // BUBBLE SORT
+        BubbleSort bubble = new BubbleSort();
+        int[] arra = {64, 34, 25, 12, 22, 11, 90};
+        int[] array = bubble.Bubble(arra);
+        System.out.println("Array sorted in ascending order:");
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
     }
 }
