@@ -1,6 +1,7 @@
 
 import BinarySearch.BinarySearch;
 import BubbleSort.BubbleSort;
+import InsertionSort.InsertionSort;
 import LinkedList.Lista.ListaLigada;
 
 public class Program {
@@ -37,5 +38,18 @@ public class Program {
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
         }
+
+        // ##########################################################
+        // INSERTION SORT
+        InsertionSort insertion = new InsertionSort();
+        int[] ins = new int[]{10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+        int[] res = insertion.insertionSort(ins);
+
+        for (int i = 0; i < res.length; i++) {
+            System.out.println(i);
+
+        }
+
     }
+
 }
